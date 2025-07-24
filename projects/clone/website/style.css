@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+ height: 100%;
+width: 100%;
+}
+.container{
+max-width: 80vw;
+padding: 2rem 1rem;
+margin: 0 auto ;
+
+
+}
+a{
+    text-decoration: none;
+}
+.header_container{
+margin-bottom: 2.5rem;
+}
+.heading{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+.para_container{
+text-align: center;
+max-width: 568px;
+margin: 0 auto;
+color: rgb(83, 80, 80);
+font-size: 1.1rem;
+font-weight: 500;
+}
+.main_container{
+   display: grid;
+    gap: 1.5rem;
+    /* grid-template-columns: repeat(1,1fr); */
+    justify-content: center;
+    /* short cut for best ui  */
+    grid-template-columns: repeat(auto-fit,minmax(350px ,400px));
+}
+
+/* @media (min-width:725px){
+    .main_container{
+ grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+}
+}
+@media (min-width:1000px){
+    .main_container{
+ grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+}
+@media (min-width:1400px){
+    .main_container{
+ grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+}
+}
+} */
+.card_container{
+    overflow: hidden;
+    display: flex;
+ flex-direction: column;
+ border: 1px solid rgb(215, 207, 207);
+ border-radius: 13px;
+
+}
+.cardimagecontainer{
+    height: 15rem;
+    position: relative;
+    overflow: hidden;
+}
+.main_image{
+    object-fit:cover;
+    object-fit: center;
+    position: absolute;
+    height: 100%;
+width: 100%;
+}
+.cardtitle{
+    display: flex;
+    flex-direction: column  ;
+    padding: 1rem;
+}
+.card_title_anchor{
+font-size: 1.2rem;
+color: black;
+
+}
+.card_title_anchor:hover{
+    color: blue;
+}
+.para_main{
+    margin-top: 1.2rem;
+max-width: 600px;
+color: grey;
+font-size: 1.1rem;
+font-size: 0.95rem;
+font-weight: 400;
+ 
+}
+.main_container :hover .main_image{
+    transform: scale(1.2);
+}
+.semicontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+    
+    
+}
+.div1{
+  display: flex;
+  flex-direction: row;
+align-items: center;
+font-size: 0.85rem;
+
+    
+}
+.image_div{
+height: 2.5rem;
+width:2.5rem;
+overflow: hidden;
+border: 1px solid black;
+border-radius: 50%;
+background-color: grey;
+}
+.decsription_div{
+
+display: flex;
+flex-direction: column;
+ padding: 1.5rem;
+ 
+
+}
+john{
+    color: blue;
+}
+.descdiv{
+    border: 2px solid rgb(192, 192, 192);
+    line-height: 1.3rem;
+    padding: 0.30rem;
+    color: black;
+border-radius: 5px;
+}
+
+.div2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div2 :hover{
+    background-color: rgb(91, 83, 83);
+    color: white;
+}

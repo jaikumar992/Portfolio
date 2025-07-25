@@ -290,62 +290,122 @@ footer {
   font-size: 12px;
 }
 
+/* medai query */
+/* Responsive Design - Tablets and Below */
+@media (max-width: 1024px) {
+  .main {
+    padding-left: 3rem;
+    padding-top: 6rem;
+    text-align: center;
+  }
 
-
-
-
-
-/* ------------ MEDIA QUERIES ------------ */
-
-/* For very large screens (like > 1600px) */
-@media screen and (min-width: 1600px) {
   .mainheading {
-    font-size: 4rem;  /* reduce from 5rem */
+    font-size: 4rem;
   }
+
   .main-heading1 {
-    font-size: 6rem;  /* reduce from 8rem */
+    font-size: 6rem;
+    line-height: 5rem;
   }
+
   .paramain {
     font-size: 1.3rem;
   }
-}
-@media screen and (min-width: 1600px) {
-  .mainheading {
-    font-size: 4rem; /* reduce from 5rem */
-  }
-  .main-heading1 {
-    font-size: 6rem; /* reduce from 8rem */
-  }
-  .paramain {
-    font-size: 1.5rem;
-  }
-}
 
-/* Adjust text and layout for medium screens */
-@media screen and (max-width: 992px) {
-  .mainheading {
-    font-size: 3rem;
+  .para-main1 {
+    padding-left: 0;
   }
-  .main-heading1 {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-  .paramain {
-    font-size: 1.2rem;
-  }
+
   .about {
     flex-direction: column;
     height: auto;
+    padding: 2rem 1rem;
     text-align: center;
   }
+
   .text {
     width: 100%;
-    padding-left: 0;
+    padding: 0;
   }
+
   .location {
-    margin-top: 2rem;
-    margin-left: 0;
+    margin: 2rem 0 0 0;
+  }
+
+  .photo {
+    padding: 1rem 0;
+  }
+
+  .resume {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .resume-content {
+    grid-template-columns: 1fr;
+  }
+
+  #projects {
+    height: auto;
+  }
+
+  .project-container {
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
+/* Responsive Design - Mobile Devices */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
 
+  .mainheading {
+    font-size: 3rem;
+  }
+
+  .main-heading1 {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+
+  .paramain {
+    font-size: 1.1rem;
+  }
+
+  .button-1main {
+    padding: 0.4rem 2rem;
+    font-size: 1.2rem;
+    margin: 1rem 0.5rem 0 0;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .location {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .location {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 521px) {
+.profile-pic{
+  display: none;
+}
+}
